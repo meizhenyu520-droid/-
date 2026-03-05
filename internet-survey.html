@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>インターネット利用アンケート</title>
+
+<style>
+body{
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+background:#f5f5f5;
+margin:0;
+padding:40px;
+}
+
+.container{
+max-width:600px;
+background:white;
+padding:30px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1{
+text-align:center;
+}
+
+.question{
+margin-top:25px;
+}
+
+button{
+margin-top:30px;
+padding:12px 25px;
+font-size:16px;
+background:#007aff;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#005ecb;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>インターネット利用に関するアンケート</h1>
+
+<p>ご協力ありがとうございます。<br>
+本アンケートは匿名で行われます。</p>
+
+<div class="question">
+<b>Q1 年齢</b><br>
+<label><input type="radio" name="age">18歳未満</label><br>
+<label><input type="radio" name="age">18〜22歳</label><br>
+<label><input type="radio" name="age">23〜30歳</label><br>
+<label><input type="radio" name="age">31歳以上</label>
+</div>
+
+<div class="question">
+<b>Q2 一日にどのくらいインターネットを利用しますか？</b><br>
+<label><input type="radio" name="time">1時間未満</label><br>
+<label><input type="radio" name="time">1〜3時間</label><br>
+<label><input type="radio" name="time">3〜5時間</label><br>
+<label><input type="radio" name="time">5時間以上</label>
+</div>
+
+<div class="question">
+<b>Q3 最もよく使うアプリの種類はどれですか？</b><br>
+<label><input type="radio" name="app">A 通信アプリ（LINEなど）</label><br>
+<label><input type="radio" name="app">B 動画アプリ（YouTube・TikTokなど）</label><br>
+<label><input type="radio" name="app">C ゲームアプリ</label>
+</div>
+
+<div class="question">
+<b>Q4 今後も現在と同じ利用頻度を続けると思いますか？</b><br>
+<label><input type="radio" name="future">A 減らしたい</label><br>
+<label><input type="radio" name="future">B 変わらないと思う</label><br>
+<label><input type="radio" name="future">C 増えると思う</label>
+</div>
+
+<div class="question">
+<b>Q5 インターネットはあなたの日常生活にとってどのくらい重要ですか？</b><br>
+<label><input type="radio" name="importance">とても重要</label><br>
+<label><input type="radio" name="importance">ある程度重要</label><br>
+<label><input type="radio" name="importance">あまり重要ではない</label><br>
+<label><input type="radio" name="importance">全く重要ではない</label>
+</div>
+
+<button onclick="submitSurvey()">送信</button>
+
+</div>
+
+<script>
+function submitSurvey(){
+alert("ご回答ありがとうございました！");
+}
+</script>
+
+</body>
+</html>
